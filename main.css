@@ -29,7 +29,7 @@ section h1 {
     font-size: 4rem;
     width: 40vw;
     color: #333333;
-    margin-bottom: 40px;
+    padding-bottom: 3rem;
 }
 
 section p {
@@ -61,3 +61,31 @@ footer {
     color: #333333;
 }
 
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 12px;
+    }
+
+    nav {
+        margin-bottom: 64px;
+    }
+    
+    section {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    section img {
+        width: 70vw;
+        margin: auto;
+    }
+
+    section h1, section p {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .btn-container {
+        text-align: center;
+    }
+}
